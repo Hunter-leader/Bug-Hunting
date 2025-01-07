@@ -13,3 +13,5 @@
 `*example.com` what is the means of {`*`} ?
 => means all domain's { wildcard }
 
+p1: Most Critical
+p2: High Ser
