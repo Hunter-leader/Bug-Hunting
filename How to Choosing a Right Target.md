@@ -9,3 +9,7 @@
 - Using Google Dork
 
 ---
+
+`*example.com` what is the means of {`*`} ?
+=> means all domain's { wildcard }
+
