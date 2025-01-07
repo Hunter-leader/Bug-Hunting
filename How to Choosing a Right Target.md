@@ -14,4 +14,8 @@
 => means all domain's { wildcard }
 
 p1: Most Critical
-p2: High Ser
+p2: High Severe
+p3: Medium
+p4: Low
+
+---
