@@ -18,3 +18,8 @@ Command Injection occurs when server-side code (like PHP) in a web application m
 
 ---
 # COMMAND INJECTION PRACTICAL
+
+What is Active Command Injection?
+
+Blind command injection occurs when the system command made to the server does not return the response to the user in the HTML document.  Active command injection will return the response to the user.  It can be made visible through several HTML elements.
+
