@@ -28,7 +28,8 @@ Let's consider a scenario: EvilCorp has started development on a web based shell
 
 Just like before, let's look at the sample code from evilshell.php and go over what it's doing and why it makes it active command injection.  See if you can figure it out.  I'll go over it below just as before.
 
-EvilShell (evilshell.php) Code Example
+
+#### EvilShell (evilshell.php) Code Example
 
 ![](https://i.imgur.com/KcGizdo.png)
 
@@ -41,3 +42,9 @@ In pseudocode, the above snippet is doing the following:
 3. The program then goes into a try block to execute the function `passthru($command_string)`.  You can read the docs on `passthru()` on [PHP's website](https://www.php.net/manual/en/function.passthru.php), but in general, it is executing what gets entered into the input then passing the output directly back to the browser.
 
 4. If the try does not succeed, output the error to page.  Generally this won't output anything because you can't output stderr but PHP doesn't let you have a try without a catch.
+
+
+#### Ways to Detect Active Command Injection
+
+We know that active command injection occurs when you can see the response from the system call.  In the above code, the function `passthru()` is actually what's doing all of the work here.  It's passing the response directly to the document so you can see the fruits of your labor right there.  Since we know that, we can go over some useful commands to try to enumerate the machine a bit further.  The function call here to `passthru()` may not always be what's happening behind the scenes, but I felt it was the easiest and least complicated way to demonstrate the vulnerability.
+
