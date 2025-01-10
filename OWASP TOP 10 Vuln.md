@@ -24,3 +24,20 @@ What is Active Command Injection?
 Blind command injection occurs when the system command made to the server does not return the response to the user in the HTML document.  Active command injection will return the response to the user.  It can be made visible through several HTML elements.
 
 
+Let's consider a scenario: EvilCorp has started development on a web based shell but has accidentally left it exposed to the Internet.  It's nowhere near finished but contains the same command injection vulnerability as before!  But this time, the response from the system call can be seen on the page!  They'll never learn!
+
+Just like before, let's look at the sample code from evilshell.php and go over what it's doing and why it makes it active command injection.  See if you can figure it out.  I'll go over it below just as before.
+
+EvilShell (evilshell.php) Code Example
+
+![](https://i.imgur.com/KcGizdo.png)
+
+In pseudocode, the above snippet is doing the following:
+
+1. Checking if the parameter "commandString" is set
+
+2. If it is, then the variable `$command_string` gets what was passed into the input field
+
+3. The program then goes into a try block to execute the function `passthru($command_string)`.  You can read the docs on `passthru()` on [PHP's website](https://www.php.net/manual/en/function.passthru.php), but in general, it is executing what gets entered into the input then passing the output directly back to the browser.
+
+4. If the try does not succeed, output the error to page.  Generally this won't output anything because you can't output stderr but PHP doesn't let you have a try without a catch.
