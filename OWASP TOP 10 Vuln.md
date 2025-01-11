@@ -56,4 +56,5 @@ XML (eXtensible Markup Language) is a markup language that defines a set of rul
 
 ### where is the falcon's SSH key located?
 
-now by default loc
+now by default location : `/home/username/.ssh/id_rsa`
+this case : `/home/falcon/.ssh/id_rsa`
