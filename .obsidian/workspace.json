@@ -55,12 +55,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OWASP TOP 10 Vuln.md",
+                "file": "XSS/Stored XSS/Stored XSS.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OWASP TOP 10 Vuln"
+              "title": "Stored XSS"
             }
           }
         ],
@@ -208,8 +208,8 @@
   },
   "active": "6770816bc1700643",
   "lastOpenFiles": [
-    "Check List/OWASP Check List.md",
     "OWASP TOP 10 Vuln.md",
+    "Check List/OWASP Check List.md",
     "Check List/OWASP_Web_Application_Penetration_Checklist_v1_1.pdf",
     "First thing first.md",
     "Bug Bounty Platforms.md",
