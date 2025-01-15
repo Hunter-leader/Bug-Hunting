@@ -69,12 +69,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Payload.md",
+                "file": "OWASP TOP 10 Vuln.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Payload"
+              "title": "OWASP TOP 10 Vuln"
             }
           }
         ],
@@ -222,8 +222,8 @@
   },
   "active": "52108123ae1d8e04",
   "lastOpenFiles": [
-    "XSS/Stored XSS/Stored XSS.md",
     "Payload.md",
+    "XSS/Stored XSS/Stored XSS.md",
     "OWASP TOP 10 Vuln.md",
     "Check List/OWASP Check List.md",
     "Check List/OWASP_Web_Application_Penetration_Checklist_v1_1.pdf",
